@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/menu.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/compras.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+
+    <title>Compras</title>
+</head>
+<body>
+
+<div class="main-conteiner">
+
+<header class="header">
+    <div class="header-box">
+<div class="logo-box"> <a href="menu"><img src="https://www.picossa.com/wp-content/uploads/2020/02/cropped-logo-png.png" alt=""></a></div>
+<div class="app-name"><h1 class="app-title"> Picossa App</h1></div>
+</div>
+
+<nav>
+<ul>
+ 
+    <li><a class="menu-item" href="productos.html">Productos</a></li>
+    <li><a  class="menu-item"href="ventas.html">Ventas</a></li>
+    <li><a class="menu-item"href="compras.html">Compras</a></li>
+    <li><a class="menu-item"href="estadosFinancieros.html">Estado Financieros</a></li>
+</ul>
+
+</nav>
+
+
+</header>
+<main class="main">
+    <h1 class="main-title">Ingreso de Compras</h1>
+    <div class="compra-box" >
+
+        
+        
+
+        <form id="formulariocompras" method="post" action="">
+            <section  class="fixed-items">
+
+            <label  class="box-items" for="">Orden de pedido</label>
+            <input id="ordenpedido" type="text">
+
+            <label class="box-items" for="">Costo de Envio</label>
+            <input id="costoEnvio" type="number" >
+
+            <label class="box-items" for="">TRM</label>
+            <input id="trm" type="number" >
+
+            <label class="box-items" for="">Fecha</label>
+            <input  id="fecha" type="date">
+        </section>
+
+        <section  id="varibleItems"class="varible-items" >
+
+            <div id="card-box" >
+            <h2 class="compras-h2">Producto</h2>
+
+            <label class="box-items" for="">Referencia</label>
+            <input id="referencia" type="text">
+
+            <label class="box-items" for="">Descripcion</label>
+            <input  id="descripcion" type="text">
+
+            <label class="box-items" for="">Categoria</label>
+            <select id="categoria" name="" >
+                <option value="" disabled selected>Selecione una categoria</option>
+                <option value="Babydolls">babydolls</option>
+                <option value="Panty">Pantys</option>
+                <option value="Bodys">Bodys</option>
+                <option value="Bralette">Bralette</option>
+                <option value="liguero">Ligueros</option>
+                <option value="vestido de Malla">Vestido de malla</option>
+            </select>
+
+            <label class="box-items" for="">Talla</label>
+            <select id="talla" name="" id="">
+                <option value="" disabled selected>Selecione una talla</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="3xl">3XL</option>
+                <option value="4xl">4XL</option>
+            </select>
+
+            <label class="box-items" for="">Peso</label>
+            <input id="peso" type="number">
+
+            <label class="box-items" for="">Cantidad</label>
+            <input id="cantidad" type="number">
+
+            <label class="box-items" for="">Precio</label>
+            <input id="precio" type="number">
+
+        
+    
+
+        </section>
+
+                
+
+        <input id="grabarBtn" class="comprasBtn" type="submit"  value="Adicionar">
+
+        </form>
+
+        <div class="new-elements" id="new-elements" >
+           
+
+        </div>
+       
+
+
+
+    </div>
+</main>
+
+<footer class="footer">
+
+<div class="footer">
+
+</div>
+
+</footer>
+
+
+</div>
+<script src="../assets/compras.js"></script>
+</body>
+</html>

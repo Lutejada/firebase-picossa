@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/menu.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/productos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <title>Productos</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="cabezera">
+            <div class="logo-box"><img src="https://www.picossa.com/wp-content/uploads/2020/02/cropped-logo-png.png" alt=""></div>
+            <div class="app-name">
+                <h1 class="app-title"> Picossa App</h1>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a class="menu-item" href="productos.html">Productos</a></li>
+                <li><a  class="menu-item"href="ventas.html">Ventas</a></li>
+                <li><a class="menu-item"href="compras.html">Compras</a></li>
+                <li><a class="menu-item"href="estadosFinancieros.html">Estado Financieros</a></li>
+            </ul>
+
+        </nav>
+
+
+    </header>
+    <main class="main">
+        <div class="box-form">
+
+            <form method="POST" id="crear-producto" action="">
+
+                <h3 class="new-product">Crear Nuevo Producto</h3>
+
+
+                <div class="form-item">
+                    <label for="">Referencia</label>
+                    <input id="ref" type="text">
+                </div>
+
+
+                <div class="form-item">
+                    <label for="">Descripcion </label>
+                    <input id="descripcion" type="text">
+                </div>
+
+                <div class="form-item">
+                    <label for="">Talla</label>
+                    <select name="Talla" id="talla">
+                <option value="">Seleccione una Talla</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="2Xl">2XL</option>
+                <option value="3XL">3XL</option>
+                <option value="4XL">4XL</option>
+            </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="">Peso </label>
+                    <input id="peso" type="text">
+                </div>
+
+                <div class="form-item">
+                    <label for="">Categoria</label>
+                    <select name="categoria" id="categoria">
+                <option value="">Seleccione una Categoria</option>
+                <option value="Babydol">Babydoll</option>
+                <option value="Body">Body</option>
+                <option value="Ligueros">Ligueros</option>
+                <option value="Vestidos de malla">Vestido De Malla</option>
+                <option value="Bralette">Bralette</option>
+                <option value="Panty">Panty</option>
+                <option value="Conjunto">Conjunto</option>
+
+            </select>
+                </div>
+                <div class="form-item">
+                    <input id="crearBtn" value="Crear" type="submit">
+                </div>
+
+            </form>
+
+
+            <form class="consultar-producto"  id ="consultar-producto" method="POST" action="">
+
+                <h3 class="new-product">Consultar Productos</h3>
+                <label for=""> Referencia</label>
+                <input  id ="consulta" type="search">
+                <button id="productoBtn" type="submit"><i class="fas fa-search"></i> </button>
+                <div id="dato-consulta">
+
+                </div>
+
+
+
+
+            </form>
+
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            hola mundo
+        </div>
+
+    </footer>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAGbk09prpcoAr0ptQaupuXWqgnP3s9NT0",
+    authDomain: "picossa-app.firebaseapp.com",
+    databaseURL: "https://picossa-app.firebaseio.com",
+    projectId: "picossa-app",
+    storageBucket: "picossa-app.appspot.com",
+    messagingSenderId: "862434075792",
+    appId: "1:862434075792:web:244112136176c8b9cfa415"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+<script src="../assets/producto.js"></script>
+
+</body>
+
+</html>

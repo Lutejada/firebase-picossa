@@ -1,0 +1,164 @@
+
+
+.compra-box{
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+}
+
+#formulariocompras{
+    flex-grow: 1;
+    flex-basis: 8%;
+}
+
+.main-title{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.box-items{
+    display: block;
+    font-size: 1,2em;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-bottom: 0.6em; */
+    margin-top: 1em;
+}
+
+
+.fixed-items, .varible-items{
+
+    width: 60%;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 5px rgb(173, 169, 169), -1px -1px 5px rgb(173, 169, 169);
+    margin: 1em auto;
+    padding: 1em;
+    position: relative;
+    
+
+}
+
+.compras-h2{
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+label{
+    margin-top:0.5em;
+    margin-bottom: 0.1em;
+}
+
+input[type="text"]:focus,input[type="number"]:focus,input[type="date"]:focus{
+    outline: 1px solid blue;
+}
+
+
+.comprasBtn{
+    width: max-content;
+    display: block;
+    padding: 0.5em;
+    background-color: red;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 1em auto;
+    border-radius: 5px;
+    border: 1px solid rgb(143, 7, 7);
+    box-shadow: 1px 1px 1px black;
+    transition: 0.3s;
+
+}
+
+.comprasBtn:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    color: white;
+}
+
+.comprasBtn:disabled{
+    color: whitesmoke;
+    background-color: grey;
+    box-shadow: none;
+    cursor: default;
+    border: 1px solid grey;
+    
+}
+
+
+.Btnplus{
+width: 2em;
+height: 2em;
+color: green;
+border: 1px solid rgb(7, 153, 7);
+box-shadow: 1px 1px 1px rgb(148, 142, 142);
+border-radius: 3px;
+position: absolute;
+left: 70%;
+}
+
+.Btnplus:hover{
+    box-shadow: 1px 1px 1px rgb(131, 126, 126) inset;
+    cursor: pointer;
+}
+
+
+/* elementos nuevos  */
+
+.new-elements{
+flex-grow: 1;
+flex-basis: 30%;
+height: max-content;
+
+
+
+
+
+}
+
+.newElementStyle{
+
+    width: 90%;
+    height: auto;
+    color: black;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 3px grey;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    
+
+}
+.information-box{
+display: flex;
+flex-flow: row wrap;
+line-height: 0em;
+}
+
+
+.title-new-element{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: black;
+    text-transform: capitalize;
+}
+
+
+.information-box > h3{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    text-transform: capitalize;
+}
+
+.information-box> h3 >p{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: rgb(90, 88, 88);
+    text-transform: capitalize;
+    margin: 0.3em 1em 0 0.5em;
+}
+

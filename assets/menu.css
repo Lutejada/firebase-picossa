@@ -1,0 +1,95 @@
+
+.main-conteiner{
+
+display: grid;
+
+grid-template-areas: 
+                    "header header header"
+                    
+                    "main main main"
+                    "footer footer footer";
+
+}
+
+
+
+
+/* esto es el header */
+
+.header{
+    grid-area: header;
+
+    
+}
+
+.header-box{
+    display: flex;
+}
+
+.logo-box{
+    flex-grow: 1;
+}
+
+.app-name{
+    flex-grow: 1;
+}
+
+.app-title{
+    font-size: 3em;
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/* esto es navegacion  */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    background-color: rgb(218, 218, 218);
+
+}
+
+
+ul li{
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    text-align: center;
+    
+
+}
+
+li:hover .menu-item{
+    transition: .5s;
+    color: red;
+}
+
+/* esto es contenido */
+
+.main{
+    grid-area:main;
+    min-height: 10em;
+}
+
+
+
+
+/* esto es el footer */
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    background-color: black;
+    min-height: 10em;
+}
