@@ -1,7 +1,7 @@
 // firestore
 
 const db = firebase.firestore();
-export { db }
+
 console.log(db)
 
 // capturar Datos
@@ -62,6 +62,9 @@ function eventlistener() {
 
             }).then(function() {
                 console.log("Document successfully written!");
+                formulario.reset()
+
+
             })
             .catch(function(error) {
                 console.error("Error writing document: ", error);
@@ -91,8 +94,10 @@ function eventlistener() {
                 var producto = doc.data()
                 if (producto.referencia == consultarProducto) {
                     console.log("es correcto")
+
                 } else {
                     console.log("no se encontro un producto")
+
                 }
                 //console.log(doc.id, " => ", doc.data());
 
@@ -145,5 +150,3 @@ function validarLongitud(campo) {
     }
 
 }
-
-//export { db }

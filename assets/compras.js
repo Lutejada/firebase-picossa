@@ -1,5 +1,3 @@
-//import { db } from 'producto.js';
-
 const comprasBtn = document.getElementById("grabarBtn");
 
 const formulario = document.getElementById("formulariocompras");
