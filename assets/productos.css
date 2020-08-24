@@ -1,78 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-
-
-
-
-
-.box-form{
+.box-form {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
-    
 }
 
-
-.new-product{
+.new-product {
     text-align: center;
     font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-
-
 }
 
-form label{
+form label {
     display: block;
-    font-family:'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     margin-bottom: 0.2em;
 }
 
-#crear-producto{
+#crear-producto {
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     flex-basis: 60%;
-    
-
-    
 }
 
-.form-item{
+.form-item {
     width: 30%;
     margin: 1em 0;
     text-align: left;
 }
 
-
-input[type="text"]:focus , input[type="number"]:focus ,input[type="search"]:focus{
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus {
     outline: 1px solid blue;
-    
-    
 }
 
-input[type="text"] , input[type="number"] ,input[type="search"]{
-    
+input[type="text"],
+input[type="number"],
+input[type="search"] {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(90, 80, 80);
-    
 }
 
-
-
-
-
-.form-item:last-child{
-   display: flex;
-         
+.form-item:last-child {
+    display: flex;
 }
 
-#crearBtn{
+#crearBtn {
     min-width: max-content;
     max-width: 30%;
-    color :white;
+    color: white;
     font-size: 2em;
     background-color: red;
     border: 1px solid rgb(141, 9, 9);
@@ -80,28 +64,36 @@ input[type="text"] , input[type="number"] ,input[type="search"]{
     justify-content: center;
     margin: 0 auto;
     cursor: pointer;
-    
 }
 
-#crearBtn:hover#crearBtn{
-   box-shadow: 1px 1px 3px black;
-   
-   
-    
+#crearBtn:hover#crearBtn {
+    box-shadow: 1px 1px 3px black;
 }
 
-#crearBtn:disabled{
+#crearBtn:disabled {
     background-color: gray;
     cursor: default;
     border: grey;
-    transform: scale(1,1);
+    transform: scale(1, 1);
     box-shadow: 0px 0px 0px;
 }
 
 
 /* esto es consultar producto */
 
-.consultar-producto{
+.consultar-producto {
     flex-grow: 1;
     flex-basis: 30%;
+}
+
+.box-item-consulta {
+    width: 70%;
+    border: 1px solid black;
+    margin: 0.5em;
+    box-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.box-item-consulta h2 {
+    font-size: 1.2em;
 }

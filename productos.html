@@ -27,9 +27,9 @@
         <nav>
             <ul>
                 <li><a class="menu-item" href="productos.html">Productos</a></li>
-                <li><a  class="menu-item"href="ventas.html">Ventas</a></li>
-                <li><a class="menu-item"href="compras.html">Compras</a></li>
-                <li><a class="menu-item"href="estadosFinancieros.html">Estado Financieros</a></li>
+                <li><a class="menu-item" href="ventas.html">Ventas</a></li>
+                <li><a class="menu-item" href="compras.html">Compras</a></li>
+                <li><a class="menu-item" href="estadosFinancieros.html">Estado Financieros</a></li>
             </ul>
 
         </nav>
@@ -93,17 +93,15 @@
             </form>
 
 
-            <form class="consultar-producto"  id ="consultar-producto" method="POST" action="">
+            <form class="consultar-producto" id="consultar-producto" method="POST" action="">
 
                 <h3 class="new-product">Consultar Productos</h3>
                 <label for=""> Referencia</label>
-                <input  id ="consulta" type="search">
+                <input id="consulta" type="search">
                 <button id="productoBtn" type="submit"><i class="fas fa-search"></i> </button>
                 <div id="dato-consulta">
 
                 </div>
-
-
 
 
             </form>
@@ -121,30 +119,30 @@
 
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyAGbk09prpcoAr0ptQaupuXWqgnP3s9NT0",
-    authDomain: "picossa-app.firebaseapp.com",
-    databaseURL: "https://picossa-app.firebaseio.com",
-    projectId: "picossa-app",
-    storageBucket: "picossa-app.appspot.com",
-    messagingSenderId: "862434075792",
-    appId: "1:862434075792:web:244112136176c8b9cfa415"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAGbk09prpcoAr0ptQaupuXWqgnP3s9NT0",
+            authDomain: "picossa-app.firebaseapp.com",
+            databaseURL: "https://picossa-app.firebaseio.com",
+            projectId: "picossa-app",
+            storageBucket: "picossa-app.appspot.com",
+            messagingSenderId: "862434075792",
+            appId: "1:862434075792:web:244112136176c8b9cfa415"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 
 
-<script src="../assets/producto.js"></script>
+    <script src="../assets/producto.js"></script>
 
 </body>
 

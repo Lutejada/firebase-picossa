@@ -1,8 +1,5 @@
 // firestore
-
 const db = firebase.firestore();
-
-console.log(db)
 
 // capturar Datos
 const formulario = document.getElementById("crear-producto");
@@ -17,6 +14,8 @@ const categoria = document.getElementById("categoria")
 const peso = document.getElementById("peso")
 
 const consutarProducto = document.getElementById("consulta")
+
+const boxConsulta = document.getElementById('dato-consulta')
 
 
 // addEventListener//
@@ -65,6 +64,7 @@ function eventlistener() {
                 formulario.reset()
 
 
+
             })
             .catch(function(error) {
                 console.error("Error writing document: ", error);
@@ -86,13 +86,24 @@ function eventlistener() {
 
         const consultarProducto = document.getElementById("consulta").value;
         console.log(consutarProducto)
-
+        boxConsulta.innerHTML = ``
         db.collection("productos").get().then(function(querySnapshot) {
             querySnapshot.forEach(function(doc) {
                 // doc.data() is never undefined for query doc snapshots
 
                 var producto = doc.data()
                 if (producto.referencia == consultarProducto) {
+                    // adicionar el html
+
+                    boxConsulta.innerHTML += `
+                    <div class="box-item-consulta">
+                    <h2> Referencia: ${producto.referencia}</h2>
+                    <h2> Descripcion: ${producto.descripcion}</h2>
+                    <h2> Talla: ${producto.talla}</h2>
+                    <h2> Peso: ${producto.peso}</h2>
+                    <h2> Categoria: ${producto.categoria}</h2>
+                    </div>
+                    `
                     console.log("es correcto")
 
                 } else {
